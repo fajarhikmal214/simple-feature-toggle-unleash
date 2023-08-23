@@ -1,0 +1,5 @@
+{
+    "validation.any.required": "Isian {{ attribute }} wajib diisi.",
+
+    "common.file.not.found": "File {{ attribute }} tidak ditemukan."
+}
