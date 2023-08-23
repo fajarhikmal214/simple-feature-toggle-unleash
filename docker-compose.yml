@@ -1,0 +1,55 @@
+version: '3'
+services:
+  core-service-app:
+    build:
+      context: ./core-service
+      dockerfile: ./docker/Dockerfile
+    container_name: 'core-service-app'
+    image: app-core-service
+    restart: always
+    volumes:
+      - ./core-service:/app
+      - /app/node_modules
+    env_file:
+      - ./core-service/.env
+    ports:
+      - 4001:4001
+    networks:
+      - simple-feature-toogle-unleash-network
+
+  external-service-app:
+    build:
+      context: ./external-service
+      dockerfile: ./docker/Dockerfile
+    container_name: 'external-service-app'
+    image: app-external-service
+    restart: always
+    volumes:
+      - ./external-service:/app
+      - /app/node_modules
+    env_file:
+      - ./external-service/.env
+    ports:
+      - 4002:4002
+    networks:
+      - simple-feature-toogle-unleash-network
+
+  watcher-service-app:
+    build:
+      context: ./watcher-service
+      dockerfile: ./docker/Dockerfile
+    container_name: 'watcher-service-app'
+    image: app-watcher-service
+    restart: always
+    volumes:
+      - ./watcher-service:/app
+      - /app/node_modules
+    env_file:
+      - ./watcher-service/.env
+    ports:
+      - 4002:4002
+    networks:
+      - simple-feature-toogle-unleash-network
+
+networks:
+  simple-feature-toogle-unleash-network:
