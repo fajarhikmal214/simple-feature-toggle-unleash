@@ -11,6 +11,7 @@ class Handler {
             try {
                 const result = await this.usecase.DoingStuff()
 
+                this.logger.info('endpoint doing stuff called')
                 res.status(statusCode.OK).json(result)
             } catch (error: any) {
                 this.logger.error(error.message)
