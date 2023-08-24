@@ -14,4 +14,7 @@ export interface Config {
         instance_id: string
         api_key: string
     }
+    external_service: {
+        url: string
+    }
 }

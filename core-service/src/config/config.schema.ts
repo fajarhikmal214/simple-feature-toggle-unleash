@@ -12,4 +12,5 @@ export default Joi.object({
     UNLEASH_APP_NAME: Joi.string().required(),
     UNLEASH_INSTANCE_ID: Joi.string().required(),
     UNLEASH_API_KEY: Joi.string().required(),
+    EXTERNAL_SERVICE_URL: Joi.string().required(),
 })

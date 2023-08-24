@@ -22,6 +22,9 @@ const config: Config = {
         instance_id: env.UNLEASH_INSTANCE_ID,
         api_key: env.UNLEASH_API_KEY,
     },
+    external_service: {
+        url: env.EXTERNAL_SERVICE_URL,
+    },
 }
 
 export default config

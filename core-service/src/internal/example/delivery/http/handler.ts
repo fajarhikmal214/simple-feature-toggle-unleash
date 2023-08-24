@@ -11,6 +11,7 @@ class Handler {
             try {
                 const result = await this.usecase.ExternalService()
 
+                this.logger.info('endpoint external service called')
                 res.status(statusCode.OK).json(result)
             } catch (error: any) {
                 this.logger.error(error.message)
