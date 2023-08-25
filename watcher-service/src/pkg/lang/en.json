@@ -1,5 +1,0 @@
-{
-    "validation.any.required": "Field {{ attribute }} is required.",
-
-    "common.file.not.found": "File {{ attribute }} not found."
-}
