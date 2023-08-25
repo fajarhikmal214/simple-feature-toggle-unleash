@@ -2,7 +2,7 @@
 
 Simple implementation feature toggle with Unleash
 
-![Simple Feature Toggle](https://github.com/fajarhikmal214/simple-feature-toggle-unleash/assets/79292118/a189815b-d3bf-4789-be00-110d30662d65)
+![Simple Feature Toggle](https://github.com/fajarhikmal214/simple-feature-toggle-unleash/assets/79292118/d8142e0d-25fd-4b16-b670-a56524411800)
 
 ## Tech Stacks
 - **TypeScript** - <https://www.typescriptlang.org/>
